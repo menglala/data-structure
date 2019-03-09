@@ -2,7 +2,7 @@ let Queue = (function() {
   let _items = new WeakMap()
   class Queue {
     constructor() {
-      _items.set(this)
+      _items.set(this, [])
     }
     enqueue(item) {
       let items = _items.get(this)
@@ -26,7 +26,8 @@ let Queue = (function() {
     }
     print() {
       let items = _items.get(this)
-      console.log(items.toString ())
+      console.log(items.toString())
     }
   }
+  return Queue
 })()
