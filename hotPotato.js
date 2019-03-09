@@ -1,3 +1,4 @@
+// 击鼓传花(丢手绢)
 function Queue() {
   let items = []
   // this.items = items
@@ -30,9 +31,9 @@ function hotPotato(nameList, num) {
   while (queue.sizes() > 1) {
     for (let i = 0; i < num; i++) {
       queue.enqueue(queue.dequeue())
-      out = queue.dequeue()
-      console.log(out, '被淘汰了')
     }
+    out = queue.dequeue()
+    console.log(out, '被淘汰了')
   }
   return queue.dequeue()
 }
