@@ -11,7 +11,7 @@ function baseConverter(num, base) {
     num = Math.floor(num / base)
   }
   while (!remStack.isEmpty()) {
-    result += digits[remStack.pop()] // 这里不理解
+    result += digits[remStack.pop()]
   }
   return result
 }
