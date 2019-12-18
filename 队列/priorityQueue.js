@@ -25,9 +25,11 @@ function PriorityQueue() {
     }
   }
 }
-// let queue = new PriorityQueue()
-// queue.pushElement('a', 10)
-// queue.pushElement('s', 0)
-// queue.pushElement('d', 2)
-// queue.pushElement('c', 5)
-// queue.print()
+
+// 测试
+let queue = new PriorityQueue()
+queue.pushElement('优先级10', 10)
+queue.pushElement('优先级0', 0)
+queue.pushElement('优先级2', 2)
+queue.pushElement('优先级5', 5)
+queue.print() // 0-2-5-10

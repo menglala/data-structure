@@ -20,7 +20,7 @@ let Queue = (function() {
       let items = _items.get(this)
       return items.length === 0
     }
-    size() {
+    sizes() {
       let items = _items.get(this)
       return items.length
     }
@@ -30,4 +30,4 @@ let Queue = (function() {
     }
   }
   return Queue
-})()
+})();
