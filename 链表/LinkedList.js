@@ -104,6 +104,7 @@ function LinkedList() {
 
     return string;
   },
+  
   this.indexOf = function (element) {
     let current = head;
     let index = 0;
